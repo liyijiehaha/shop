@@ -37,6 +37,3 @@ Route::get('/getscore', 'GoodsDetailController@getscore');
 //计划任务
 Route::get('/weixin/delorder','Contab\ContabController@del_order');//删除过期订单
 
-//微信接口返回文件
-Route::get('/weixin/list','Wx\WeiXinController@list');
-Route::post('/weixin/list','Wx\WeiXinController@wxEvent');
