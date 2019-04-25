@@ -47,7 +47,7 @@ class IndexController extends Controller
     /**
      * 订单列表页
      */
-    public function oList()
+    public function List()
     {
         $list = OrderModel::where(['user_id'=>Auth::id()])->orderBy("order_id","desc")->get()->toArray();
         $data = [
